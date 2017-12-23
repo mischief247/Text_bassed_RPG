@@ -14,6 +14,5 @@ public enum Type {
     TOOL,
     SPECIAL,
     SPELL,
-    CUSTOME,
-
+    CUSTOME
 }

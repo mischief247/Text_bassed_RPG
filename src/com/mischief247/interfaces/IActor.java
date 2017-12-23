@@ -16,4 +16,9 @@ public interface IActor {
      HashMap<Location,IItem> getEquipment();
      boolean equip(Location l,IItem item);
      int getACC();
+     String getName();
+     String getHeight();
+     int getWeight();
+     String getGender();
+
 }
