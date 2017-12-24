@@ -7,4 +7,5 @@ String getName();
 boolean isEnchanted();
 String getDescription();
 Type getType();
+int hashcode();
 }

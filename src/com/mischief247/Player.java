@@ -1,13 +1,19 @@
+package com.mischief247;
+
 import com.mischief247.interfaces.IPlayer;
+import com.mischief247.utils.Inventory;
 
 public class Player extends NPC implements IPlayer {
     private int xp;
     private int gold;
-    public Player(int hp, int lv, int def, int atk, int spd,int acc, int weight,int xp,int gold ,String name, String gender, String height){
+    private Inventory inventory = new Inventory();
+
+     Player(int hp, int lv, int def, int atk, int spd,int acc, int weight,int xp,int gold ,String name, String gender, String height){
         super(hp,lv,def,atk,spd,acc,weight,name,gender,height);
         this.xp = xp;
         this.gold = gold;
     }
+
     @Override
     public int getXp() {
         return xp;
@@ -25,7 +31,7 @@ public class Player extends NPC implements IPlayer {
 
     @Override
     public boolean spendGold(int goldSpent) {
-        if(gold - goldSpent <0){
+        if(gold - goldSpent < 0){
             return false;
         }
         else {
@@ -38,4 +44,5 @@ public class Player extends NPC implements IPlayer {
     public void addGold(int goldGained) {
         gold += goldGained;
     }
+
 }

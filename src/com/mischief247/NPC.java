@@ -1,3 +1,5 @@
+package com.mischief247;
+
 import com.mischief247.interfaces.IActor;
 import com.mischief247.interfaces.IItem;
 import com.mischief247.utils.Location;
