@@ -1,6 +1,6 @@
 package com.mischief247.interfaces;
 
-public interface IEnchantedItem extends IItem{
+public interface IEnchantable extends IItem{
     boolean doEnchant();
 
 }

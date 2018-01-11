@@ -7,5 +7,6 @@ String getName();
 boolean isEnchanted();
 String getDescription();
 Type getType();
+int getWeight();
 int hashcode();
 }

@@ -8,7 +8,7 @@ public class Main {
         String name= "";
         String gender = "";
         String height = "";
-        Player mainChacter;
+        Player mainChachter;
         int weight = 0;
         boolean isSetUp = false;
 
@@ -30,7 +30,7 @@ public class Main {
                 isSetUp = true;
             }
         }
-        mainChacter= new Player(20,1,5,10,10,80,weight,0,0,name,gender,height);
+        mainChachter= new Player(20,1,5,10,10,80,weight,0,0,name,gender,height);
 
     }
     private static void query(String s){

@@ -1,14 +1,14 @@
 package com.mischief247;
 
-import com.mischief247.interfaces.IPlayer;
+import com.mischief247.interfaces.IPlayable;
 import com.mischief247.utils.Inventory;
 
-public class Player extends NPC implements IPlayer {
+public class Player extends NPC implements IPlayable {
     private int xp;
     private int gold;
     private Inventory inventory = new Inventory();
 
-     Player(int hp, int lv, int def, int atk, int spd,int acc, int weight,int xp,int gold ,String name, String gender, String height){
+     Player(int hp, int lv, int def, int atk, int spd, int acc, int weight, int xp, int gold , String name, String gender, String height){
         super(hp,lv,def,atk,spd,acc,weight,name,gender,height);
         this.xp = xp;
         this.gold = gold;
